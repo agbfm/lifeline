@@ -19,6 +19,7 @@
   "dependencies": {
     "@prisma/adapter-pg": "^5.10.2",
     "@prisma/client": "5.10.2",
+    "baojs": "^0.2.1",
     "pg": "^8.11.3"
   },
   "prisma": {
