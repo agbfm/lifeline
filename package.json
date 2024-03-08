@@ -1,0 +1,14 @@
+{
+  "name": "lifeline",
+  "private": true,
+  "scripts": {
+    "server:dev": "bun run server/index.ts",
+    "lint": "eslint app server shared"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
