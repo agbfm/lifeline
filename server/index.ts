@@ -11,6 +11,8 @@ app.get("/posts", async (ctx) => {
   return ctx.sendJson(posts);
 });
 
-const server = app.listen();
+const server = app.listen({
+  port: parseInt(process.env.PORT || "3000"),
+});
 
 console.log(`Listening on http://localhost:${server.port} ...`);
