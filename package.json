@@ -2,6 +2,7 @@
   "name": "lifeline",
   "private": true,
   "scripts": {
+    "app:dev": "bun --bun run app/dev",
     "server:dev": "bun run server/index.ts",
     "lint": "eslint app server shared"
   }
