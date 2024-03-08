@@ -2,10 +2,26 @@
   "name": "lifeline-server",
   "module": "index.ts",
   "type": "module",
-  "devDependencies": {
-    "@types/bun": "^1.0.8"
+  "scripts": {
+    "db:generate": "bun prisma generate",
+    "db:seed": "bun prisma db seed",
+    "dev": "bun run index.ts",
+    "lint": "eslint",
+    "test": "bun test"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "devDependencies": {
+    "@types/bun": "^1.0.8",
+    "@types/node": "^20.11.25",
+    "prisma": "^5.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^5.10.2",
+    "@prisma/client": "5.10.2",
+    "pg": "^8.11.3"
+  },
+  "prisma": {
+    "seed": "bun prisma/seed.ts"
   }
 }

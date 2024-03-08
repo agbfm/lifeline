@@ -1,5 +1,8 @@
+import { PrismaClient } from "@prisma/client";
+const prisma = new PrismaClient();
+
 const server = Bun.serve({
-  port: 3000,
+  port: process.env.PORT,
   fetch(_) {
     return new Response("Lifeline API v0.1");
   },
