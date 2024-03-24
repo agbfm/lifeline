@@ -1,19 +1,19 @@
 import dayjs from "@/libs/dayjs";
 
-export const getDayMonthLabel = (date: string | Date) => {
-  if (typeof date === "string") {
-    date = dayjs(date, "DD/MM/YYYY", true).toDate();
-  }
-
-  return date.toLocaleString("en-US", { day: "numeric", month: "short" });
-};
-
 export const getDate = (date: string | Date) => {
   if (typeof date === "string") {
     date = new Date(date);
   }
 
   return date.toLocaleDateString("en-GB");
+};
+
+export const getDayMonthLabel = (date: string | Date) => {
+  if (typeof date === "string") {
+    date = dayjs(date, "DD/MM/YYYY", true).toDate();
+  }
+
+  return date.toLocaleString("en-US", { day: "numeric", month: "short" });
 };
 
 export const isPast = (date: string | Date) => {
