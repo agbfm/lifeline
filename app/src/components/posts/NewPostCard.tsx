@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export const NewEntryCard = () => {
+export const NewPostCard = () => {
   const [type, setType] = useState("general");
   return (
     <div

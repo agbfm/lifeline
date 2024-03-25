@@ -1,7 +1,6 @@
 "use client";
 
 import { Post } from "@/types/post";
-import { PostCard } from "./posts/PostCard";
 import { useState } from "react";
 import { getDayMonthLabel, isToday, isYesterday } from "@/utils/date";
 import { GroupCard } from "./posts/GroupCard";
@@ -24,7 +23,7 @@ export const DateSection = ({ date, posts }: Props) => {
     <>
       <div className="flex">
         <h2
-          className="text-gray-500 text-md font-medium cursor-pointer"
+          className="text-gray-500 text-md font-medium cursor-pointer w-32"
           onClick={() => setExpanded(!expanded)}
         >
           {dateLabel}
@@ -35,8 +34,8 @@ export const DateSection = ({ date, posts }: Props) => {
           <ol className="flex">
             <li className="flex flex-row py-2">
               <span className="flex min-h-full w-0.5 bg-gray-300" />
-              <div className="ml-8 py-2">
-                <div className="py-2">
+              <div className="ml-8">
+                <div className="pb-2">
                   <GroupCard posts={posts} />
                 </div>
               </div>

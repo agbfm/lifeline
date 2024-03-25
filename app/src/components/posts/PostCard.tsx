@@ -59,7 +59,7 @@ export const PostCard = ({ post }: PostCardProps) => {
   const body = post.type.startsWith("payment") ? (
     <PaymentPostCardContent post={post} />
   ) : (
-    <span className="text-md">{post.body}</span>
+    <span className="text-sm">{post.body}</span>
   );
 
   return (

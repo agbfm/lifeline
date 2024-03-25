@@ -1,5 +1,5 @@
 import { Timeline } from "@/components/timeline/Timeline";
-import { NewEntryCard } from "@/components/posts/NewEntryCard";
+import { NewPostCard } from "@/components/posts/NewPostCard";
 import { usePosts } from "@/hooks/api/usePosts";
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
       <div className="flex container justify-center">
         <div className="flex flex-col">
           <div className="pt-4 pb-8">
-            <NewEntryCard />
+            <NewPostCard />
           </div>
           <Timeline posts={posts} />
         </div>

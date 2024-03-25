@@ -1,12 +1,6 @@
 import { Post } from "@/types/post";
 import { Card } from "../common/Card";
-import {
-  CreditCardIcon,
-  DocumentIcon,
-  DocumentPlusIcon,
-  HomeIcon,
-  RectangleStackIcon,
-} from "@heroicons/react/16/solid";
+import { RectangleStackIcon } from "@heroicons/react/16/solid";
 import { useState } from "react";
 import { PostCard } from "./PostCard";
 
